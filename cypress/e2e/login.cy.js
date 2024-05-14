@@ -23,7 +23,7 @@ describe('Login', () => {
     it('senha incorreta', () => {
         cy.login('qa', 'teste')
         cy.get(toast)
-            .should('have.text', 'Oops! Senha incorreta :(')
+            .should('have.text', 'Oops! Sua senha está incorreta :(')
     })
 
     it('com sucesso', () => {
